@@ -1,0 +1,25 @@
+{
+  "name": "kk-node-logs",
+  "version": "0.0.1",
+  "main": "build/main.js",
+  "typings": "build/main.d.ts",
+  "repository": "",
+  "author": "鲁雲龙 <karlkidd8080@163.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "npm run clean && npm run compile",
+    "clean": "gts clean",
+    "compile": "tsc -p .",
+    "prepublish": "npm run build"
+  },
+  "devDependencies": {
+    "@types/sqlstring": "^2.3.0",
+    "gts": "^0.8.0",
+    "ts-node": "^7.0.1",
+    "typescript": "~3.4.0"
+  },
+  "dependencies": {
+    "@types/node": "^20.11.9",
+    "dayjs": "^1.11.10"
+  }
+}
